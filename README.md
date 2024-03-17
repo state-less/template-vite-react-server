@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + React Server
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a [React Server](https://reactserver.dev) template for Vite. Read the docs for more info.
 
-Currently, two official plugins are available:
+## Quickstart
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can use this template to quickly setup a new Frontend:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+npx degit state-less/template-vite-react-server my-frontend
+cd my-frontend
+yarn
+yarn dev --mode=production
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+This will clone our template with all the neccessary setup to connect to a React Server instance.
+
+_Note:_ Starting the server in production mode connects to our live server, so you can take a look at the frontend without starting a server yourself.
